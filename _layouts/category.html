@@ -7,6 +7,7 @@
     {% include header.html %}
     <div role="main" class="main">
         <a href="#nav" class="nav-toggle">Menu</a>
+        {{page.category}}
         <ul>
           {% for post in site.posts %}
             {% for category in site.categories %}
