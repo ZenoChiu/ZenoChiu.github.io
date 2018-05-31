@@ -9,6 +9,10 @@
   font-style: normal;
 }
 
+body{
+    overflow:hidden;
+}
+
 body,div,
 h1,h2,p,
 ol,ul,li {
@@ -25,6 +29,7 @@ ol,ul,li {
 
 html, body {
   min-height: 100%;
+  
 }
 
 body {
