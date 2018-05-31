@@ -10,7 +10,7 @@
             {% for category in site.categories %}
                 {% if category[0] == page.category %}
                     {% if category[0] == post.category %}
-                    <h1>{{ category | last | size }}</h1>
+                    <h1>共{{ category | last | size }}个结果</h1>
                     {% endif %}
                 {% endif %}
             {% endfor %}
