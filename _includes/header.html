@@ -5,6 +5,9 @@
         {% if category[0] == page.category %}
             class="active"
         {% endif %}
+        {% if category[0] == post.category %}
+            class="active"
+        {% endif %}
         ><a href="/category/{{category | first}}">{{category | first}}</a></li>
         {% endfor %}
     </ul>
