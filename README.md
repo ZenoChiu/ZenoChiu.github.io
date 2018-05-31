@@ -1,6 +1,6 @@
 # Zeno Chiu's Blog
 
-### 使用第三分插件
+### 使用第三方插件
 
 [Responsive Nav](https://github.com/viljamis/responsive-nav.js)
 
