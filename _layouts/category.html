@@ -12,7 +12,7 @@
           {% for post in site.posts %}
             {% for category in site.categories %}
               {% if category == page.category %}
-              <li>{{post.title}}</li>
+              <a href='{{ post.url | relative_url }}'><li>{{post.title}}</li></a>
               {% endif %}
             {% endfor %}
           {% endfor %}
