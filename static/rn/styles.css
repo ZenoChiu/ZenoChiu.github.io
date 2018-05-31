@@ -76,6 +76,9 @@ p.intro {
 
 
 */
+a {
+  text-decoration: none;
+}
 a:active,
 a:hover {
   outline: 0;
