@@ -242,8 +242,7 @@ a:hover {
     margin-top:20px;
     color: #000;
     padding: 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border-bottom: 1px solid #ddd;
 }
 .card>h1{
     float:none;
