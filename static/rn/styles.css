@@ -233,3 +233,10 @@ a:hover {
   .nav-collapse { width: 18em }
   .main { width: auto; left: 18em }
 }
+
+.card{
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
