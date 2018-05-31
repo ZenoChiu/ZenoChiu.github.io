@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-    <div role="navigation" id="foo" class="nav-collapse">
-      <ul>
-        {% for category in site.categories %}
-        <li class="active"><a href="#">{{category | first}}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+{% include head.html %}
 
+<body>
+    
+    {% include header.html %}
     <div role="main" class="main">
-      <a href="#nav" class="nav-toggle">Menu</a>
+        <a href="#nav" class="nav-toggle">Menu</a>
         {{content}}
     </div>
+    {% include footer.html %}
+</body>
 
-    <script>
-      var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
-    </script>
-  </body>
 </html>
