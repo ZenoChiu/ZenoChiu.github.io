@@ -4,10 +4,9 @@
   <body>
     <div role="navigation" id="foo" class="nav-collapse">
       <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
+        {% for category in site.categories %}
+        <li class="active"><a href="#">{{category}}</a></li>
+        {% endfor %}
       </ul>
     </div>
 
