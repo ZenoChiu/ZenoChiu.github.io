@@ -9,9 +9,7 @@
   font-style: normal;
 }
 
-body{
-    overflow:hidden;
-}
+
 
 body,div,
 h1,h2,p,
@@ -41,6 +39,7 @@ body {
   background: #444 url("debut_dark.png") repeat;
   color: #666;
   font: normal 100%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow:hidden;
 }
 
 h1 {
@@ -90,7 +89,6 @@ a:hover {
   padding: 3em 4em;
   position: fixed;
   overflow: hidden;
-  overflow-y: scroll;
   border-top-left-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0, .6);
   top: .8em;
