@@ -4,3 +4,8 @@ description: 邱泽帆个人博客
 github_username:  Zeno.Chiu
 
 permalink: /:categories/:year/:month/:day/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
