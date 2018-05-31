@@ -241,7 +241,9 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
-
+.card>h1{
+    float:none;
+}
 .card>p{
     float: none;
     font-size: 14px;
