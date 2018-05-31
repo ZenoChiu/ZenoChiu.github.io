@@ -1,7 +1,11 @@
 <div role="navigation" id="foo" class="nav-collapse">
     <ul>
         {% for category in site.categories %}
-        <li class="active"><a href="/category/{{category | first}}">{{category | first}}</a></li>
+        <li 
+        {% if '/category/+category' != page.url %}
+            class="active"
+        {% endif %}
+        ><a href="/category/{{category | first}}">{{category | first}}</a></li>
         {% endfor %}
     </ul>
 </div>
