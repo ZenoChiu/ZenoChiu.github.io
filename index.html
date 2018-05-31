@@ -10,7 +10,7 @@ layout: default
 </ul>
 
 <ul>
-{% for tag in post.categories %}
+{% for tag in site.categories %}
 <li><a href="{{'/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
 {% endfor %}
 </ul>
