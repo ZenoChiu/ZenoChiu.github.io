@@ -2,7 +2,7 @@
     <ul>
         {% for category in site.categories %}
         <li 
-        {% if (category | first) == page.category %}
+        {% if category[0] == page.category %}
             class="active"
         {% endif %}
         ><a href="/category/{{category | first}}">{{category | first}}</a></li>
