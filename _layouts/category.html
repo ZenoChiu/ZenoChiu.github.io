@@ -7,22 +7,28 @@
     {% include header.html %}
     <div role="main" class="main">
         <a href="#nav" class="nav-toggle">Menu</a>
-            
-          {% for post in site.posts %}
             {% for category in site.categories %}
-              {% if category[0] == page.category %}
-              {% if category[0] == post.category %}
-            
-              <a href='{{ post.url | relative_url }}'>
-                  <div class="card">
-                     <h1>{{post.title}}</h1>
-                     <p>{{post.category}}</p>
-                  </div>
-              </a>
-              {% endif %}
-              {% endif %}
+                {% if category[0] == page.category %}
+                    {% if category[0] == post.category %}
+                    <h1>{{ category | last | size }}</h1>
+                    {% endif %}
+                {% endif %}
             {% endfor %}
-          {% endfor %}
+
+            {% for post in site.posts %}
+                {% for category in site.categories %}
+                    {% if category[0] == page.category %}
+                        {% if category[0] == post.category %}
+                        <a href='{{ post.url | relative_url }}'>
+                            <div class="card">
+                                <h1>{{post.title}}</h1>
+                                <p>{{post.category}}</p>
+                            </div>
+                        </a>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
         
     </div>
     {% include footer.html %}
