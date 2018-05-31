@@ -8,3 +8,9 @@ layout: default
 </a>
 {% endfor %}
 </ul>
+
+<ul>
+{% for tag in post.categories %}
+<li><a href="{{'/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
