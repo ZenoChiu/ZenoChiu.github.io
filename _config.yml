@@ -1,5 +1,6 @@
 title: Zeno.Chiu
 email: hi@qiuzefan.com
-description: 邱泽帆等个人博客
-github_username:  ZenoChiu
+description: 邱泽帆个人博客
+github_username:  Zeno.Chiu
+
 permalink: /:categories/:year/:month/:day/:title/
