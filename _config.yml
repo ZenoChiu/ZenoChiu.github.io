@@ -2,4 +2,4 @@ title: Zeno.Chiu
 email: hi@qiuzefan.com
 description: 邱泽帆等个人博客
 github_username:  ZenoChiu
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:year/:month/:day/:title/
