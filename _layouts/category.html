@@ -16,6 +16,16 @@
               {% endif %}
             {% endfor %}
           {% endfor %}
+          <br>
+          {% for post in site.posts %}
+              <a href='{{ post.url | relative_url }}'><li>{{post.title}}</li></a>
+          {% endfor %}
+          <br>
+          {% for post in site.posts %}
+            {% for category in site.categories %}
+              <a href='{{ post.url | relative_url }}'><li>{{post.title}}</li></a>
+            {% endfor %}
+          {% endfor %}
         </ul>
     </div>
     {% include footer.html %}
