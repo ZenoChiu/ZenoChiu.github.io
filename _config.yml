@@ -3,7 +3,7 @@ email: hi@qiuzefan.com
 description: 邱泽帆个人博客
 github_username:  Zeno.Chiu
 
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /category/:categories/:year/:month/:day/:title/
 
 markdown: kramdown
 kramdown:
